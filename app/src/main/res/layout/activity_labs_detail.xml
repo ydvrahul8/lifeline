@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.modules.lab_detail.LabsDetailActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include
+            android:id="@+id/include2"
+            layout="@layout/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            android:text="@string/app_name"
+            android:textAppearance="@style/AppTextAppearance.Headline4"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintStart_toEndOf="@+id/imageView16" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/appCompatRatingBar"
+            style="?android:ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            android:numStars="5"
+            android:saveEnabled="true"
+            app:layout_constraintStart_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:text="@string/reviews_"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatRatingBar"
+            app:layout_constraintStart_toEndOf="@+id/appCompatRatingBar"
+            app:layout_constraintTop_toTopOf="@+id/appCompatRatingBar" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/about"
+            android:textAppearance="@style/AppTextAppearance.Headline4"
+            app:layout_constraintStart_toStartOf="@+id/imageView16"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:text="@string/dummy_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            app:layout_constraintStart_toStartOf="@+id/textView26"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:srcCompat="@drawable/ic_phone" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:text="+911234567890"
+            android:textAppearance="@style/AppTextAppearance.Subtitle1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_12"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/textView28"
+            app:srcCompat="@drawable/ic_mail" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:text="+911234567890"
+            android:textAppearance="@style/AppTextAppearance.Subtitle1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            app:srcCompat="@drawable/ic_location"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:text="+911234567890"
+            android:textAppearance="@style/AppTextAppearance.Subtitle1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19"
+            app:srcCompat="@drawable/ic_clock"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:text="+911234567890"
+            android:textAppearance="@style/AppTextAppearance.Subtitle1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+            app:layout_constraintStart_toEndOf="@+id/imageView20"
+            app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:text="@string/available_test"
+            android:textAllCaps="true"
+            android:textAppearance="@style/AppTextAppearance.Headline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_appointment"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:background="@drawable/bg_rounded_grey_rectangle"
+            android:padding="@dimen/dimen_12"
+            app:layout_constraintBottom_toBottomOf="@+id/textView32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView31"
+            app:srcCompat="@drawable/ic_search"
+            app:tint="@color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32"
+            tools:listitem="@layout/item_lab_availability" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/book_appointment"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textAppearance="@style/AppTextAppearance.Subtitle1"
+        android:padding="@dimen/dimen_20"
+        android:background="@color/black"/>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

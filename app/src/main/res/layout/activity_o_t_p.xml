@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    tools:context=".view.modules.login.OTPActivity">
+
+        <include
+            android:id="@+id/imageView3"
+            layout="@layout/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:gravity="center"
+        android:id="@+id/textView_enterOTP"
+        android:text="@string/otp_that_has_been_sent_to_91_0989"
+        android:textAppearance="@style/AppTextAppearance.Headline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <com.mukesh.OtpView
+        android:id="@+id/etOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:inputType="number"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        app:itemCount="4"
+        app:itemHeight="48dp"
+        app:itemSpacing="@dimen/dimen_12"
+        app:itemWidth="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_enterOTP"
+        app:viewType="none"
+        android:itemBackground="@drawable/bg_rounded_red_rectangle"
+        />
+
+    <TextView
+        android:id="@+id/textView_resendOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:gravity="center"
+        android:text="@string/resend_code"
+        android:textAppearance="@style/AppTextAppearance.Subtitle1"
+        app:layout_constraintEnd_toEndOf="@+id/etOtp"
+        app:layout_constraintStart_toStartOf="@+id/etOtp"
+        app:layout_constraintTop_toBottomOf="@+id/etOtp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/dimen_16">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/edit_number"
+            android:textAppearance="@style/AppTextAppearance.Headline4" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="6dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
