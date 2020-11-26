@@ -5,6 +5,7 @@
     <string name="enter_location">Enter your location</string>
     <string name="set_location">Set location</string>
     <string name="enter_phone">Enter Phone Number</string>
+    <string name="phone_number">Phone Number</string>
     <string name="hint_date">DD - MM - YYYY</string>
     <string name="enter_yout_mobile">Enter your mobile number</string>
     <string name="otp_that_has_been_sent_to_91_0989">Enter the 4-digit code sent to you at\n  +91 99066 66789.</string>
@@ -12,6 +13,7 @@
     <string name="search_for_test">Search for test</string>
     <string name="cadiac_checkup">Cadiac Checkup</string>
     <string name="recent_reports">Recent reports</string>
+    <string name="upcoming_appointment">Upcoming Appointments</string>
     <string name="ago">1h ago</string>
     <string name="home">Home</string>
     <string name="get_direction">Get directions</string>
@@ -22,8 +24,9 @@
     <string name="request_home_sampleing">Request home sampleing</string>
     <string name="remove_test">Remove test</string>
     <string name="proceed_to_pay">Proceed to pay</string>
-    <string name="add_member">Add member</string>
+    <string name="add_patient">Add Patient</string>
     <string name="address">Address</string>
+    <string name="add_address">Add Address</string>
     <string name="setting">Setting</string>
     <string name="notifications">Notifications</string>
     <string name="search">Search</string>
@@ -35,6 +38,8 @@
     <string name="edit_number">Edit number</string>
     <string name="dob">When were you born?</string>
     <string name="select_gender">Select your gender</string>
+    <string name="select_city">Select city</string>
+    <string name="city">City</string>
     <string name="gender">Gender</string>
     <string name="name">What is your name?</string>
     <string name="name_">Name</string>
@@ -53,6 +58,8 @@
     <string name="general_info">General Info</string>
     <string name="book_appointment">Book appointment</string>
     <string name="sort_by">Sort By</string>
+    <string name="pincode">Pincode</string>
+    <string name="landmark">Landmark</string>
     <string name="clear_all_filters">Clear all filters</string>
     <string name="select_lab_appointment">Select a lab to book an appointment</string>
     <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>

@@ -24,4 +24,5 @@
     <color name="textheading4">#4f5661</color>
     <color name="black">#000000</color>
     <color name="light_blue">#C3DAFF</color>
+    <color name="light_yellow">#26FFB800</color>
 </resources>

@@ -44,6 +44,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/dimen_16"
+            android:drawableRight="@drawable/ic_arrow_down"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/dimen_16"
             android:background="@drawable/bg_rounded_grey_rectangle"
@@ -52,6 +53,7 @@
 
         <EditText
             android:layout_width="match_parent"
+            android:drawableRight="@drawable/ic_arrow_down"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_rounded_grey_rectangle"
             android:hint="@string/gender"
@@ -61,13 +63,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_rounded_grey_rectangle"
-            android:hint="@string/relation"
+            android:hint="@string/phone_number"
             android:layout_marginTop="@dimen/dimen_16"
             android:padding="@dimen/dimen_16" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:background="@drawable/bg_rounded_grey_rectangle"
             android:text="@string/address"
             android:layout_marginTop="@dimen/dimen_16"
@@ -82,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
-        android:text="@string/add_member"
+        android:text="@string/add_patient"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"

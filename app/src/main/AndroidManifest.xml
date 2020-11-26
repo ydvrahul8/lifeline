@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.modules.lab_detail.LabsDetailActivity"></activity>
+        <activity android:name=".view.modules.dashboard.AddAddressActivity"></activity>
+        <activity android:name=".view.modules.signup.SelectCityActivity" />
+        <activity android:name=".view.modules.lab_detail.LabsDetailActivity" />
         <activity android:name=".view.modules.book_appointment.BookAppointmentActivity" />
         <activity android:name=".view.modules.test_detail.TestsDetailActivity" />
         <activity android:name=".view.modules.search.SearchActivity" />
